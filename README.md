@@ -1,35 +1,12 @@
-Shopmart — Project-Based Learning E-commerce (React)
+# React + Vite
 
-Shopmart is a small, project-based e-commerce application built with React to help you learn practical frontend development. It demonstrates common e-commerce features (product listing, product details, cart, filtering, search, and a mock checkout) while teaching how to structure a real React project, work with APIs, manage state, and prepare for deploying a web app.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Features
+Currently, two official plugins are available:
 
-Product listing with pagination (or infinite scroll)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Product details page (images, description, price, ratings)
+## Expanding the ESLint configuration
 
-Add to cart / remove from cart / update quantity
-
-Cart summary with subtotal and mock checkout flow
-
-Search and category filters
-
-Responsive layout (mobile → desktop)
-
-Uses a public or local API (Fake Store API) — easy to swap data sources
-
-Simple routing (React Router) and state management (Context API / Redux optional)
-
-Tech stack
-
-React (Create React App or Vite)
-
-React Router
-
-State management: Context API (or Redux)
-
-CSS: Tailwind CSS / plain CSS / Styled Components (your choice)
-
-Data: Fake Store API (https://fakestoreapi.com) or local JSON
-
-Future enhancements:axios or fetch for HTTP requests
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
