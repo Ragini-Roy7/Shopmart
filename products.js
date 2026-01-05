@@ -1,5 +1,5 @@
+// products.js
 
-// Local product data (can be swapped with API)
 export const products = [
   { id: 1, title: "Fjällräven Laptop Backpack", price: 109.95, image: "https://i.dummyjson.com/data/products/1/3.jpg", category:"bags" },
   { id: 2, title: "Mens Casual Henley T-Shirt", price: 22.3, image: "https://i.dummyjson.com/data/products/2/2.jpg", category:"shirts" },
@@ -10,7 +10,8 @@ export const products = [
   { id: 7, title: "Wireless Headphones", price: 45.0, image: "https://i.dummyjson.com/data/products/61/2.jpg", category:"electronics" },
   { id: 8, title: "Leather Wallet Brown", price: 19.5, image: "https://i.dummyjson.com/data/products/64/2.jpg", category:"accessories" }
 ];
-const filtered = products.filter(p => p.category === selectedCategory);
-export const getProductsByCategory = (selectedCategory) => {
-  return products.filter(p => p.category === selectedCategory);
+
+export const getProductsByCategory = (category) => {
+  if (!category || category === "all") return products;
+  return products.filter(p => p.category === category);
 };
